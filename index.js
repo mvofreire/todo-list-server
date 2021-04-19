@@ -80,6 +80,10 @@ app.delete('/tasks-all', async (req, res) => {
   res.status(200).send()
 })
 
+app.get('/', (req, res) => {
+  res.send('Task API running')
+})
+
 app.listen(port, () => {
   console.log('Server is running');
 })
